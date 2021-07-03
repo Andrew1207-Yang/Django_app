@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#contact" class="logo">APS</a>
+<!--             
+            <nav>
+                <ul class="primary_nav">
+                    <li class="current"><a href="../">Home</a></li>
+                    <li><a href="./products">Products</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./about_us">About Us</a></li>
+                    <li><a href="./more">More</a></li>
+                </ul>
+            </nav> -->
+
+
+            <img id="mobile-cta" class="mobile-menu" src="{% static 'images/menu.svg'%}" alt="Open nav bar">
+
+            <nav>
+                <img id="mobile-exit" class ="mobile-menu-exit" src="{% static 'images/exit.svg'%}" alt="Close nav bar">
+                <ul class="primary-nav">
+                    <!-- unordered list -->
+                    <li class="current"><a href="../">Home</a></li>
+                    <li><a href="./products">Products</a></li>
+                    <li><a href="./blogs">Blogs</a></li>
+                    <li><a href="./about_us">About Us</a></li>
+                    <li><a href="./more">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+<div class="main">
+    <section class="hero">
+        <div class="container">
+            <div class="middle">
+                <h1>In Voices We Care</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida, justo vitae pharetra convallis, purus</p>
+                <div class="hero-cta">
+                    <a href="./products" class = "primary-cta">Purchase</a>
+                    <a href="./blogs" class = "secondary-cta">View Blog ></a>
+                </div>
+            </div>
+            <img src="{% static 'images/hero-bg.svg'%}" alt="hero-bg">
+        </div>
+    </section>
+
+    <section class="core_belief">
+        <div id = "core-outer" class="container">
+            <div class="container">
+                <h1>Core Belief</h1>
+                <p> Arphostotle is a startup that aims to bring people inspiring stories and aesthetic clothing through art and photography. It's a platform for you to be heard, it’s a community for you to participate in, it’s a mindset to be spread, and it is a social movement in the form of art. 
+                </p>
+            </div>
+            <img src="{% static 'images/core_belief.svg'%}" alt="core_pic">
+        </div>
+    </section>
+
+
+    <!-- <section class="designs">
+        <ul class="design_1">
+            <h1>Our Design</h1>
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="design_cta">
+                <a class = "left" href="#">Learn More ></a>
+                <a class = "right" href="#">Purchase ></a>
+            </div>
+            <img src="{%static 'images/design.svg'%}" alt="design">
+        </ul>
+
+        <ul class="design_2">
+            <h1>Our Design</h1>
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="design_cta">
+                <a class = "left" href="#">Learn More ></a>
+                <a class = "right" href="#">Purchase ></a>
+            </div>
+            <img src="{%static 'images/design.svg'%}" alt="design">
+        </ul>
+
+        <ul class="design_3">
+            <h1>Our Design</h1>
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            <div class="design_cta">
+                <a class = "left" href="#">Learn More ></a>
+                <a class = "right" href="#">Purchase ></a>
+            </div>
+            <img src="{%static 'images/design.svg'%}" alt="design">
+        </ul>
+    </section> -->
+
+    <section class="story">
+        <div id = "story-outer" class="container">
+            <div class="container">
+                <h1>Latest Story: {{object_list.title}}</h1>
+                <p>{{object_list.content|safe}}</p>
+                <a href="{{object_list.get_absolute_url}}">Read More > </a>
+            </div>
+            <img src="{{object_list.preview_image.url}}" alt="story-pic">
+        </div>
+    </section>
+
+    <section class="blog">
+        <div id = "blog_1" class="blog_content">
+            <div class="text">
+                <h1>Story 1</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                <div class="blog_cta">
+                    <a href="./blogs">Read More ></a>
+                </div>
+            </div>
+            <img src="{%static 'images/instagram_icon_white.svg'%}" alt="Instagram">
+
+
+        </div>
+        <div id = "blog_2" class="blog_content">
+            <div class="text">
+                <h1>Story 2</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                <div class="blog_cta">
+                    <a href="./blogs">Read More ></a>
+                </div>
+            </div>
+            <img src="{%static 'images/facebook_icon_white.svg'%}" alt="Facebook">
+
+ 
+        </div>
+        <div id = "blog_3" class="blog_content">
+            <div class="text">
+                <h1>Story 3</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                <div class="blog_cta">
+                    <a href="./blogs">Read More ></a>
+                </div>
+            </div>
+            <img src="{%static 'images/youtube_icon_white.svg'%}" alt="Youtube">
+
+
+        </div>
+        <div id = "blog_4"class="blog_content">
+            <div class="text">
+                <h1>Story 4</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+                <div class="blog_cta">
+                    <a href="./blogs">Read More ></a>
+                </div>
+            </div>
+            <img src="{%static 'images/podcast_icon_white.svg'%}" alt="Podcast">
+
+
+        </div>
+    </section>
+
+    <section class="contact-section">
+
+        <div class="container" id = "contact">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form method="POST"> {%csrf_token%}
+                    {{form.as_p}}
+                    <input type="submit" class="send-message-cta" value="send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.407431943991!2d-122.17191304883018!3d37.42747873973789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford%20University!5e0!3m2!1sen!2stw!4v1621407179266!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+</div>
+    <section class="end_note">
+        <div class="container">
+            <img class ="copyright"src="{% static 'images/copyright_white.svg'%}" alt="copyright_icon">
+            <h3>2021 All Rights Reserved</h3>
+        </div>
+    </section>
+
+    <script>
+        
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+
+</body>
+</html>

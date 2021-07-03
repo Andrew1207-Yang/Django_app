@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/more.css'%}">
+    <title>More</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">APS</a>
+
+            <img id="mobile-cta" class="mobile-menu" src="{% static 'images/menu.svg'%}" alt="Open nav bar">
+
+            <nav>
+                <img id="mobile-exit" class ="mobile-menu-exit" src="{% static 'images/exit.svg'%}" alt="Close nav bar">
+
+                <ul class="primary_nav">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../products">Products</a></li>
+                    <li><a href="../blogs">Blogs</a></li>
+                    <li><a href="../about_us">About Us</a></li>
+                    <li class="current"><a href="#">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1>Want to Know More?</h1>
+                <h3>Other platforms we are on</h3>
+            </div>
+            <img src="{%static 'images/more-icon.svg'%}" alt="More-icon">
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="element">
+                <img src="{%static 'images/podcast_icon.svg'%}" alt="Podcast">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div class="element">
+                <img src="{%static 'images/youtube-icon.svg'%}" alt="Youtube">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div class="element">
+                <img src="{%static 'images/facebook_icon.svg'%}" alt="Facebook">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div class="element">
+                <img src="{%static 'images/instagram_icon.svg'%}" alt="Instagram">
+                <p>Lorem ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="end_note">
+        <div class="container">
+            <img class ="copyright"src="{% static 'images/copyright_white.svg'%}" alt="copyright_icon">
+            <h3>2021 All Rights Reserved</h3>
+        </div>
+    </section>
+
+    <script>
+        
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>

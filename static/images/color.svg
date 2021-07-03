@@ -1,0 +1,19 @@
+<svg id="Pallete" xmlns="http://www.w3.org/2000/svg" width="402" height="196" viewBox="0 0 402 196">
+  <rect id="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(9)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-2" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(95)" fill="#17ac4a"/>
+  <rect id="MHL43_SW_COLOR-3" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(181)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-4" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(267)" fill="#17ac4a"/>
+  <rect id="MHL43_SW_COLOR-5" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(353)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-6" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(9 69)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-7" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(95 69)" fill="#17ac4a"/>
+  <rect id="MHL43_SW_COLOR-8" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(181 69)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-9" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(181 138)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-10" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(267 69)" fill="#17ac4a"/>
+  <rect id="MHL43_SW_COLOR-11" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(353 69)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-12" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(9 138)" fill="#d85252"/>
+  <rect id="MHL43_SW_COLOR-13" data-name="MHL43_SW_COLOR" width="49" height="49" rx="24.5" transform="translate(95 138)" fill="#17ac4a"/>
+  <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(0 130)" fill="none" stroke="#0077ed" stroke-width="3">
+    <ellipse cx="33.5" cy="33" rx="33.5" ry="33" stroke="none"/>
+    <ellipse cx="33.5" cy="33" rx="32" ry="31.5" fill="none"/>
+  </g>
+</svg>

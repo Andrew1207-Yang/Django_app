@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/team-intro.css' %}">
+    <title>About Us</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">APS</a>
+            <img id="mobile-cta" class="mobile-menu" src="{% static 'images/menu.svg'%}" alt="Open nav bar">
+
+            <nav>
+                <img id="mobile-exit" class ="mobile-menu-exit" src="{% static 'images/exit.svg'%}" alt="Close nav bar">
+                <ul class="primary_nav">
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../products">Products</a></li>
+                    <li><a href="../blogs">Blog</a></li>
+                    <li class="current"><a href="#">About Us</a></li>
+                    <li><a href="../more">More</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <h1>Who are we</h1>
+                <h3>People Behind the Scene</h3>
+            </div>
+            <img src="{% static 'images/about_us_icon.svg'%}" alt="about_us_icon">
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="container">
+            <div class="element">
+                <img src="{%static 'images/about_us1.svg'%}" alt="Fisrt">
+                <p>Hi, I’m Andrew Yang, a Taiwanese high school student. I utilize my skills and knowledge to try to create social impact and spread positive thoughts. During this process, I found the plethora of thoughts that young students have, yet there is barely any method for them to be heard. With Arphostotle, we hope to let the public hear the voice of students and other groups suffering the same problem of not being heard, and create a community of care and empathy!</p>
+            </div>
+            <div class="element">
+                <img src="{%static 'images/about_us2.svg'%}" alt="Second">
+                <p>Hey, I’m Avinash Gu. As a high school student, I make a positive impact and spread positive ideas among fellow high schoolers through art. Along the way, I realize how influential the voice of youth can be if done the right way. With Arphostotle, we hope through design and writing, we can find the most extraordinary stories out of the most common people, amplify them through our platform, and create a chance for all to be a part of a social movement. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="end_note">
+        <div class="container">
+            <img class ="copyright"src="{% static 'images/copyright_white.svg'%}" alt="copyright_icon">
+            <h3>2021 All Rights Reserved</h3>
+        </div>
+    </section>
+    <script>
+        
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+</body>
+</html>
